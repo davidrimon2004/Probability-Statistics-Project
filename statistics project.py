@@ -9,6 +9,12 @@ def Bar(x,y,IndX,IndY):
     mat.show()
 data ="Diabetes Dataset.csv"
 read=pd.read_csv(data)
-preg=read['Pregnancies']         #index=0
-gloc=read['Glucose']             #index=1
-pressure=read['BloodPressure']   #index=2
+preg=read[read.columns[0]]         
+gloc=read[read.columns[1]]             
+pressure=read[read.columns[2]]
+thick=read[read.columns[3]]
+insulin=read[read.columns[4]]
+bmi=read[read.columns[5]]
+diabetes=read[read.columns[6]]
+age=read[read.columns[7]]
+outcome=read[read.columns[8]]
