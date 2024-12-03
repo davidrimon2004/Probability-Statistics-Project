@@ -1,12 +1,12 @@
 import math
 import statistics as stat
 import pandas as pd
-data ="Diabetes Dataset.csv"
+import matplotlib.pyplot as visual
 def Bar(x,y,IndX,IndY):
-    mat.bar(x,y)
-    mat.xlabel(read.columns[IndX])
-    mat.ylabel(read.columns[IndY])
-    mat.show()
+    visual.bar(x,y)
+    visual.xlabel(read.columns[IndX])
+    visual.ylabel(read.columns[IndY])
+    visual.show()
 data ="Diabetes Dataset.csv"
 read=pd.read_csv(data)
 preg=read[read.columns[0]]         
