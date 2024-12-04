@@ -28,3 +28,7 @@ ct=read[read.columns[8]].value_counts()
 visual.pie(ct,labels=['0','1'])
 visual.legend()
 visual.show()
+#Box Plot 
+read.boxplot(column=columns[3])
+visual.ylabel('')
+visual.show()
