@@ -2,6 +2,7 @@ import math
 import statistics as stat
 import pandas as pd
 import matplotlib.pyplot as visual
+import seaborn as sb
 def Scatterplot(x_axis,y_axis,IndX,IndY):
     sb.scatterplot(x=x_axis,y=y_axis)
     visual.xlabel(read.columns[IndX])
